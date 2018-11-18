@@ -1,4 +1,4 @@
-This is an example plugin to showcase working of `@wpackio/scripts`. It has
+This is an example plugin to showcase working of [`@wpackio/scripts`](https://wpack.io). It has
 the following features.
 
 1. Using [React](https://reactjs.org) and [React Hot Loader](https://github.com/gaearon/react-hot-loader)
@@ -9,13 +9,19 @@ the following features.
 
 1. Clone this repository.
 2. Make sure you have [docker](https://www.docker.com/) and [composer](https://getcomposer.org/) installed on your machine.
-3. Install all composer dependency (just `wpackio/enqueue` in our case).
+3. Install all node dependencies.
+
+    ```bash
+    npm i
+    ```
+
+4. Install all composer dependency (just `wpackio/enqueue` in our case).
 
     ```bash
     composer install
     ```
 
-4. Run the following command from this directory `examples/plugin`.
+5. Run the following command from this directory `examples/plugin`.
 
     ```bash
     docker-compose up -d && docker-compose logs -f wordpress
@@ -34,11 +40,11 @@ the following features.
     for checking out this demo. In your own project, both `npm` and `yarn` will
     work fine.
 
-5. Now log into your WordPress dashboard with:
+6. Now log into your WordPress dashboard with:
    a. Username: `root`
    b. Password: `root`
-6. Activate `WPack.io Sample Plugin Development` plugin.
-7. Check the homepage and check your browser's console.
+7. Activate `WPack.io Sample Plugin Development` plugin.
+8. Check the homepage and check your browser's console.
 
 > It is not a requirement to use docker for `@wpackio/scripts`. It is just
 > required for this example. You can very well spin up any local server you
