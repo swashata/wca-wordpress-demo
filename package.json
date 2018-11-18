@@ -1,0 +1,34 @@
+{
+  "name": "wca-wordpress-demo",
+  "version": "1.0.0",
+  "description": "A sample execution of wpackio scripts for WordPress Plugin Development",
+  "main": "index.js",
+  "author": "Swashata Ghosh (https://swas.io)",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@wpackio/scripts": "^2.8.0",
+    "@wpquark/eslint-config": "^3.0.0",
+    "eslint": "^5.9.0",
+    "node-sass": "^4.10.0",
+    "prettier": "^1.15.2"
+  },
+  "scripts": {
+    "bootstrap": "wpackio-scripts bootstrap",
+    "build": "wpackio-scripts build",
+    "start": "wpackio-scripts start",
+    "archive": "wpackio-scripts pack"
+  },
+  "dependencies": {
+    "@wpackio/entrypoint": "^2.0.0",
+    "bulma": "^0.7.2",
+    "classnames": "^2.2.6",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.6.3",
+    "react-hot-loader": "^4.3.11",
+    "react-spring": "^6.1.8",
+    "uuid": "^3.3.2"
+  }
+}

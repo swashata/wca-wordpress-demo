@@ -1,0 +1,17 @@
+// Get bulma files as we need
+@import '~bulma/sass/utilities/_all.sass';
+@import '~bulma/sass/components/panel.sass';
+@import '~bulma/sass/elements/button.sass';
+@import '~bulma/sass/elements/form.sass';
+@import '~bulma/sass/elements/icon.sass';
+@import '~bulma/sass/elements/other.sass';
+
+#wpackio-reactapp {
+	box-sizing: border-box;
+	*, *::before, *::after {
+		box-sizing: inherit;
+	}
+	a {
+		box-shadow: none;
+	}
+}
