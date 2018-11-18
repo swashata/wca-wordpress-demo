@@ -27,7 +27,8 @@ the following features.
     docker-compose up -d && docker-compose logs -f wordpress
     ```
 
-    Wait until the build is complete. Then press <kbd>ctrl</kbd> + <kbd>c</kbd>.
+    Wait until the build is complete. This will give you a WordPress development
+    server at `http://localhost:8080`. Then press <kbd>ctrl</kbd> + <kbd>c</kbd>.
 
     ```bash
     npm start
@@ -40,15 +41,19 @@ the following features.
     for checking out this demo. In your own project, both `npm` and `yarn` will
     work fine.
 
-6. Now log into your WordPress dashboard with:
-   a. Username: `root`
-   b. Password: `root`
+6. Now log into your WordPress dashboard with the credentials given below.
 7. Activate `WPack.io Sample Plugin Development` plugin.
 8. Check the homepage and check your browser's console.
 
 > It is not a requirement to use docker for `@wpackio/scripts`. It is just
 > required for this example. You can very well spin up any local server you
 > are comfortable with.
+
+**Docker WP Dev Server**
+
+-   URL: http://localhost:8080
+-   Username: `root`
+-   Password: `root`
 
 ## Checking some HMR
 
