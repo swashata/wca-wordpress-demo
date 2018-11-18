@@ -11,28 +11,28 @@ the following features.
 2. Make sure you have [docker](https://www.docker.com/) and [composer](https://getcomposer.org/) installed on your machine.
 3. Install all composer dependency (just `wpackio/enqueue` in our case).
 
-   ```bash
-   composer install
-   ```
+    ```bash
+    composer install
+    ```
 
 4. Run the following command from this directory `examples/plugin`.
 
-   ```bash
-   docker-compose up -d && docker-compose logs -f wordpress
-   ```
+    ```bash
+    docker-compose up -d && docker-compose logs -f wordpress
+    ```
 
-   Wait until the build is complete. Then press <kbd>ctrl</kbd> + <kbd>c</kbd>.
+    Wait until the build is complete. Then press <kbd>ctrl</kbd> + <kbd>c</kbd>.
 
-   ```bash
-   npm start
-   ```
+    ```bash
+    npm start
+    ```
 
-   This will open up the development server within your network LAN Ip address.
+    This will open up the development server within your network LAN Ip address.
 
-   Note that due to how `file:` dependency works with `npm`, it might throw some
-   error. We recommend using `yarn`, until the issue is resolved. This is just
-   for checking out this demo. In your own project, both `npm` and `yarn` will
-   work fine.
+    Note that due to how `file:` dependency works with `npm`, it might throw some
+    error. We recommend using `yarn`, until the issue is resolved. This is just
+    for checking out this demo. In your own project, both `npm` and `yarn` will
+    work fine.
 
 5. Now log into your WordPress dashboard with:
    a. Username: `root`
@@ -81,3 +81,7 @@ Run
 ```bash
 npm run archive
 ```
+
+## License
+
+Just like WordPress itself `GPL-2.0` or later.
