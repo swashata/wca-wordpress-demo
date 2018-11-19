@@ -24,6 +24,12 @@ the following features.
 5. Run the following command from this directory `examples/plugin`.
 
     ```bash
+    npm run docker:up
+    ```
+
+    This basically runs the following command.
+
+    ```bash
     docker-compose up -d && docker-compose logs -f wordpress
     ```
 

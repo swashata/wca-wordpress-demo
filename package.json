@@ -17,7 +17,9 @@
     "bootstrap": "wpackio-scripts bootstrap",
     "build": "wpackio-scripts build",
     "start": "wpackio-scripts start",
-    "archive": "wpackio-scripts pack"
+    "archive": "wpackio-scripts pack",
+    "docker:up": "docker-compose up -d && docker-compose logs -f wordpress",
+    "docker:down": "docker-compose down"
   },
   "dependencies": {
     "@wpackio/entrypoint": "^2.0.0",

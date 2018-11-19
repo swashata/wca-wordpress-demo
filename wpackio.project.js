@@ -56,6 +56,11 @@ module.exports = {
 	optimizeSplitChunks: true,
 	// Usually PHP and other files to watch and reload when changed
 	watch: ['./inc/*.php', 'wpackio-plugin.php'],
+	// Hook into babeloverride so that we can add react-hot-loader plugin
+	jsBabelOverride: defaults => ({
+		...defaults,
+		plugins: ['react-hot-loader/babel'],
+	}),
 	// Files that you want to copy to your ultimate theme/plugin package
 	// Supports glob matching from minimatch
 	// @link <https://github.com/isaacs/minimatch#usage>
