@@ -74,7 +74,7 @@ go ahead and edit them. The page will reload.
 
 ## Doing some react stuff
 
-![react-stuff](./reactapp.gif)
+[![Alt text](https://img.youtube.com/vi/6Jmiy0mb6P8/0.jpg)](https://www.youtube.com/watch?v=6Jmiy0mb6P8)
 
 We have created a simple shortcode `[wpackio-reactapp]`. Publish it in any page
 and this will create a todo app.
