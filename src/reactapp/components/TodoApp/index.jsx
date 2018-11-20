@@ -1,7 +1,6 @@
 import * as React from 'react';
 import uuid from 'uuid/v4';
 import classNames from 'classnames';
-import { hot } from 'react-hot-loader';
 import TodoList from './TodoList';
 import TodoForm from './TodoForm';
 import TodoHeading from './TodoHeading';
@@ -170,4 +169,4 @@ class TodoApp extends React.Component {
 	}
 }
 
-export default hot(module)(TodoApp);
+export default TodoApp;

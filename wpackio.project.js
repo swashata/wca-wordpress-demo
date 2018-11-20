@@ -9,11 +9,11 @@ module.exports = {
 	bannerConfig: {
 		name: 'wcaWordpressDemo',
 		author: 'Swashata Ghosh (https://swas.io)',
-		license: 'MIT',
-		link: 'MIT',
+		license: 'GPL-3.0',
+		link: 'https://opensource.org/licenses/GPL-3.0',
 		version: pkg.version,
 		copyrightText:
-			'This software is released under the MIT License\nhttps://opensource.org/licenses/MIT',
+			'This software is released under the GPL 3.0 License\nhttps://opensource.org/licenses/GPL-3.0',
 		credit: true,
 	},
 	// Files we need to compile, and where to put
@@ -56,11 +56,6 @@ module.exports = {
 	optimizeSplitChunks: true,
 	// Usually PHP and other files to watch and reload when changed
 	watch: ['./inc/*.php', 'wpackio-plugin.php'],
-	// Hook into babeloverride so that we can add react-hot-loader plugin
-	jsBabelOverride: defaults => ({
-		...defaults,
-		plugins: ['react-hot-loader/babel'],
-	}),
 	// Files that you want to copy to your ultimate theme/plugin package
 	// Supports glob matching from minimatch
 	// @link <https://github.com/isaacs/minimatch#usage>

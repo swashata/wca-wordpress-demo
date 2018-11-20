@@ -29,7 +29,6 @@
     "react": "^16.6.3",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.6.3",
-    "react-hot-loader": "^4.3.11",
     "react-spring": "^6.1.8",
     "uuid": "^3.3.2"
   }

@@ -1,8 +1,7 @@
 This is an example plugin to showcase working of [`@wpackio/scripts`](https://wpack.io). It has
 the following features.
 
-1. Using [React](https://reactjs.org) and [React Hot Loader](https://github.com/gaearon/react-hot-loader)
-   for best in kind DX.
+1. Custom implement HMR with webpack.
 2. Using [Sass](https://sass-lang.com/) on react components.
 
 ## Getting Started
@@ -81,7 +80,26 @@ and this will create a todo app.
 
 Edit files under `src/reactapp/` and see them refresh live (without page reload).
 
-This is done with the help of [react-hot-loader](https://github.com/gaearon/react-hot-loader).
+This is done with the help this code within the entry-point.
+
+```js
+// Render our application
+document.addEventListener('DOMContentLoaded', () => {
+	ReactDOM.render(<TodoApp />, document.querySelector('#wpackio-reactapp'));
+	// Let's Hot Module Replace the main TodoApp component
+	// module.hot is provided by WebPack
+	if (module.hot) {
+		module.hot.accept('./components/TodoApp', () => {
+			// eslint-disable-next-line global-require
+			const NewTodoApp = require('./components/TodoApp').default;
+			ReactDOM.render(
+				<NewTodoApp />,
+				document.querySelector('#wpackio-reactapp')
+			);
+		});
+	}
+});
+```
 
 ## Building Files
 
@@ -101,4 +119,4 @@ npm run archive
 
 ## License
 
-Just like WordPress itself `GPL-2.0` or later.
+[`GPL-3.0`](https://opensource.org/licenses/GPL-3.0).
