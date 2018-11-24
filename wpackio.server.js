@@ -10,10 +10,10 @@ module.exports = {
 	// If you intend to access it from your LAN (probably do?)
 	// If you keep null, then wpackio-scripts will try to determine your LAN IP
 	// on it's own, which might not always be satisfying. But it is in most cases.
-	host: undefined,
+	host: '127.0.0.1',
 	// Your WordPress development server address
 	// This is super important
-	proxy: 'http://localhost:8080',
+	proxy: 'http://wca.test',
 	// PORT on your localhost where you would want live server to hook
 	port: 3000,
 	// UI passed directly to browsersync
