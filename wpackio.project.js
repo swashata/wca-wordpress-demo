@@ -22,7 +22,7 @@ module.exports = {
 		{
 			name: 'reactapp',
 			entry: {
-				main: ['./src/reactapp/index.js'],
+				main: ['./src/reactapp/app.js'],
 			},
 			// Extra webpack config to be passed directly
 			webpackConfig: undefined,
